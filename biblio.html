@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <meta charset="UTF-8">
+    <meta http-X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biblioteca</title>
+</head>
+<body>
+    <div class="library-registration-form">
+        <h2>Registrar Nuevo Libro</h2>
+        <form>
+          <label for="title">Título del Libro:</label><br>
+          <input type="text" id="title" name="title" required><br>
+          <label for="author">Autor:</label><br>
+          <input type="text" id="author" name="author" required><br>
+          <label for="publisher">Editorial:</label><br>
+          <input type="text" id="publisher" name="publisher" required><br>
+          <label for="category">Categoría:</label><br>
+          <input type="text" id="category" name="category" required><br>
+          <label for="publication-date">Fecha de Publicación:</label><br>
+          <input type="date" id="publication-date" name="publication-date" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required><br>
+          <input type="submit" value="Registrar Libro">
+        </form>
+      </div>
+
+      <div class="user-registration-form">
+        <h2>Registrar Nuevo Usuario</h2>
+        <form>
+        <link rel="stylesheet" type="text/css" href="cssuser.css">
+          <label for="name">Nombre:</label><br>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Correo Electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="birthday">Fecha de Nacimiento:</label><br>
+          <input type="date" id="birthday" name="birthday" required><br>
+          <input type="submit" value="Registrar Usuario">
+        </form>
+      </div>
+</body>
+</html>

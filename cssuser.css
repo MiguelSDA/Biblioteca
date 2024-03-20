@@ -1,0 +1,50 @@
+.user-registration-form {
+  width: 300px;
+  margin: 20px auto 0; /* Añadido margen superior */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.user-registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-registration-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.user-registration-form input[type="text"],
+.user-registration-form input[type="email"],
+.user-registration-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.user-registration-form input[type="text"]:focus,
+.user-registration-form input[type="email"]:focus,
+.user-registration-form input[type="date"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px 1px rgba(0,123,255,0.75);
+}
+
+.user-registration-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-registration-form input[type="submit"]:hover {
+  background-color: #0069d9;
+}

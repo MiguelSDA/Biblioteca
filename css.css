@@ -1,3 +1,4 @@
+/* Estilos para el formulario de registro de libros y usuarios */
 .library-registration-form {
   width: 300px;
   margin: 0 auto;
@@ -17,7 +18,10 @@
   margin-bottom: 5px;
 }
 
-.library-registration-form input[type="text"] {
+.library-registration-form input[type="text"],
+.library-registration-form input[type="email"],
+.library-registration-form input[type="date"],
+.library-registration-form input[type="submit"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -26,14 +30,14 @@
   box-sizing: border-box;
 }
 
-.library-registration-form input[type="text"]:focus {
+.library-registration-form input[type="text"]:focus,
+.library-registration-form input[type="email"]:focus,
+.library-registration-form input[type="date"]:focus {
   outline: none;
   box-shadow: 0px 0px 2px 1px rgba(0,123,255,0.75);
 }
 
 .library-registration-form input[type="submit"] {
-  width: 100%;
-  padding: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -55,4 +59,62 @@ input[type="date"] {
   box-sizing: border-box;
   font-size: 1.1rem;
   font-family: sans-serif; /* Cambiar la fuente a sans-serif */
+}
+/* Estilos para la tabla de usuarios y libros */
+.user-list-container,
+.book-list-container {
+  margin-top: 20px;
+  text-align: center; /* Centra el contenido */
+}
+
+.user-list-container h2,
+.book-list-container h2 {
+  margin-bottom: 10px; /* Espacio adicional debajo del título */
+}
+
+#user-table,
+#book-table {
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+  border-collapse: collapse;
+  width: 80%; /* Se ajusta el ancho de la tabla */
+}
+
+#user-table th,
+#book-table th,
+#user-table td,
+#book-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#user-table th,
+#book-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+#user-table tr:nth-child(even),
+#book-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#user-table tr:hover,
+#book-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Estilos para el botón "Eliminar" */
+.delete-button {
+  background-color: #dc3545; /* Color de fondo rojo */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Color de fondo rojo más oscuro al pasar el mouse */
 }
